@@ -20,7 +20,7 @@ int main(void)
 
 	/* Print uppercase values */
 	i = 65;
-	while (i < 90)
+	while (i <= 90)
 	{
 		putchar(i);
 		i++;
