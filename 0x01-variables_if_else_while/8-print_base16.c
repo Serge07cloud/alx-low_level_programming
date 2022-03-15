@@ -8,23 +8,10 @@
 
 int main(void)
 {
-	int i = '0';
-
-	while (i < '10')
+	for(ch = '0' ; ch <= '10' ; ch++)
 	{
-		putchar(i);
-		i++;
-	}
-
-	/* Lowercase letters */
-	i = 'A';
-
-	while (i < 'G')
-	{
-		putchar(i);
-		i++;
-	}
-
+	      putchar(ch);
+	 }
 	/* New line */
 	putchar(10);
 
