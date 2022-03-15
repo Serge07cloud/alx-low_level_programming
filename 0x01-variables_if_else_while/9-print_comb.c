@@ -15,9 +15,17 @@ int main(void)
 		putchar(i);
 		if (i != 57)
 		{
+			/* Add comma */
 			putchar(44);
+
+			/* Add space */
+			putchar(32);
+		} else
+		{
+			/* Line feed */
+			putchar(10);
 		}
-		putchar(32);
+
 		i++;
 	}
 
