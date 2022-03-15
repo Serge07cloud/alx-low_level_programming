@@ -8,13 +8,24 @@
 
 int main(void)
 {
-	char letters[16] = {'0', '1', '2', '3', '4', '5', '6',
-		'7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
-	int i = 0;
+	int i = 48;
+
+	while (i < 58)
+	{
+		putchar(i);
+		i++;
+	}
+
+	i = 97;
+	while (i < 103)
+	{
+		putchar(i);
+	}
+	char c;
 
 	while (i < 16)
 	{
-		putchar(letters[i]);
+		putchar(i);
 		i++;
 	}
 
