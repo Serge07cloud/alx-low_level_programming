@@ -17,7 +17,7 @@ int main(void)
 	}
 
 	/* New line */
-	putchar(10)
+	putchar(10;)
 
 	return (0);
 }
