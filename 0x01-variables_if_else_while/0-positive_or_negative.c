@@ -2,9 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 /**
- ** Application : Positive - Zero - Negative
- ** betty style doc for function main goes there
- **/
+ * main - Entry point
+ * Application: print whether a number is positive, negative or zero equal
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
