@@ -8,18 +8,18 @@
 
 int main(void)
 {
-	int i = 30;
-	
-	while (i < 40)
+	int i = '0';
+
+	while (i < '10')
 	{
 		putchar(i);
 		i++;
 	}
 
 	/* Lowercase letters */
-	i = 61;
+	i = 'A';
 
-	while (i < 67)
+	while (i < 'G')
 	{
 		putchar(i);
 		i++;
