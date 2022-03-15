@@ -8,13 +8,20 @@
 
 int main(void)
 {
-	char ch;
+	int i = 48;
 
-	for(ch = 'a' ; ch <= 'f' ; ch++)
+	while (i < 58)
 	{
-	      putchar(ch);
-	 }
-	/* New line */
+		putchar(i);
+	}
+
+	i = 97;
+
+	while (i < 103)
+	{
+		putchar(i);
+	}
+
 	putchar(10);
 
 	return (0);
