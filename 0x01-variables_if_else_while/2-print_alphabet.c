@@ -17,6 +17,6 @@ int main(void)
 		i++;
 	}
 	/* New line */
-	putchar(10)
+	putchar(10);
 	return (0);
 }
