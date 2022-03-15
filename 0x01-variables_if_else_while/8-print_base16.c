@@ -8,37 +8,20 @@
 
 int main(void)
 {
-	int i = 0;
-	int p = 0;
-
-	while (i < 16)
+	int i = 30;
+	
+	while (i < 40)
 	{
-		if (i < 10)
-		{
-			putchar(i);
-		} else
-		{
-			if (i == 10)
-			{
-				p = 61;
-			} else if (i == 11)
-			{
-				p = 62;
-			} else if (i == 12)
-			{
-				p = 63;
-			} else if (i == 13)
-			{
-				p = 64;
-			} else if (i == 14)
-			{
-				p = 65;
-			} else
-				p = 66;
+		putchar(i);
+		i++;
+	}
 
-			putchar(p);
-		}
+	/* Lowercase letters */
+	i = 61;
 
+	while (i < 67)
+	{
+		putchar(i);
 		i++;
 	}
 
