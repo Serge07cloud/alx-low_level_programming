@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i = 0;
-	int temp = 0;
+	int p = 0;
 
 	while (i < 16)
 	{
