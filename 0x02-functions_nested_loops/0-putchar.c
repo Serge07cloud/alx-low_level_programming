@@ -21,8 +21,8 @@ int main(void)
 
 	while (i < 8)
 	{
-	 _putchar(var[i]);
-	 i++;
+		_putchar(var[i]);
+		i++;
 	}
 
 	_putchar('\n');
