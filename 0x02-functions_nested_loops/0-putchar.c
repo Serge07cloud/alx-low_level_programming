@@ -19,11 +19,14 @@ int main(void)
 	var[6] = 'a';
 	var[7] = 'r';
 	var[8] = '\0';
+
 	while (i < 9)
 	{
 	 _putchar(var[i]);
 	 i++;
 	}
+
+	_putchar('\n');
 
 	return (0);
 }
