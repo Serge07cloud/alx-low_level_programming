@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	char var[9];
+	char var[8];
 	int i = 0;
 
 	var[0] = '_';
@@ -18,9 +18,8 @@ int main(void)
 	var[5] = 'h';
 	var[6] = 'a';
 	var[7] = 'r';
-	var[8] = '\0';
 
-	while (i < 9)
+	while (i < 8)
 	{
 	 _putchar(var[i]);
 	 i++;
