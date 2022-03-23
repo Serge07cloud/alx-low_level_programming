@@ -18,12 +18,15 @@ int _atoi(char *s)
 	while (*(s + i) != '\0' && n == 0)
 	{
 		if (*(s + i) != '-')
+		{
 			n = atoi(s + i);
+
+			if ((p % 2) != 0)
+				n = n * (-1);
+		}
 		else
 			p++;
 
-		if ((p % 2) != 0)
-			n = n * (-1);
 		i++;
 	}
 
