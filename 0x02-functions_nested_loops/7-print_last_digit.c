@@ -1,18 +1,17 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * print_last_digit - print the last digit of a number
+ * print_last_digit - print the last difit of a number
  * @n: integer value
  *
- * Return: integer
+ * Return: int
  **/
 int print_last_digit(int n)
 {
-	int r = 0;
+	int p;
 
-	r = n % 10;
+	p = abs(n) % 10;
 
-	_putchar(r);
-
-	return (r);
+	return (p);
 }
