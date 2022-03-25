@@ -20,7 +20,7 @@ char *leet(char *s)
 		while (*(s + j) != '\0')
 		{
 			if (*(s + j) == l[i])
-			{	
+			{
 				*(s + j) = *(n + i);
 			}
 			j++;
