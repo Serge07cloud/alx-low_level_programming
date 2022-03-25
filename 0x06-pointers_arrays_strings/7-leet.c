@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * *leet - Encode a string
  * @s: String to encode
@@ -6,22 +7,27 @@
  */
 char *leet(char *s)
 {
-	int i = 0;
+	int i;
+	int j;
 
-	while (*(s + i) != '\0')
+	char l[] = "aeotlAEOTL";
+	char n[] = "4307143071";
+
+	i = 0;
+	while (l[i] != '\0')
 	{
-		if (*(s + i) == 'a' || *(s + i) == 'A')
-			*(s + i) = '4';
-		else if (*(s + i) == 'e' || *(s + i) == 'E')
-			*(s + i) = '3';
-		else if (*(s + i) == 'o' || *(s + i) == 'O')
-			*(s + i) = '0';
-		else if (*(s + i) == 't' || *(s + i) == 'T')
-			*(s + i) = '7';
-		else if (*(s + i) == 'l' || *(s + i) == 'L')
-			*(s + i) = '1';
+		j = 0;
+		while (*(s + j) != '\0')
+		{
+			if (*(s + j) == l[i])
+			{	
+				*(s + j) = *(n + i);
+			}
+			j++;
+		}
 		i++;
 	}
+	putchar('\n');
 
 	return (s);
 }
