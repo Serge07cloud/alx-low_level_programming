@@ -12,7 +12,9 @@ char *cap_string(char *str)
 
 	while (*(str + i) != '\0')
 	{
-		if (i > 0)
+		if (i == 0)
+			*(str + i) = toupper(*(str + i));
+		else
 		{
 			if (*(str + (i - 1)) == ' ' ||
 					*(str + i - 1) == '\t' ||
@@ -27,9 +29,9 @@ char *cap_string(char *str)
 					*(str + i - 1) == ')' ||
 					*(str + i - 1) == '{' ||
 					*(str + i - 1) == '}')
-		{
-			*(str + i) = toupper(*(str + i));
-		}
+			{
+				*(str + i) = toupper(*(str + i));
+			}
 		}
 		i++;
 	}
