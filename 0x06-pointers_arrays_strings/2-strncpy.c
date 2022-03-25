@@ -4,6 +4,8 @@
  * @dest: destination string
  * @src: source string
  * @n: first n bytes of the source string
+ *
+ * Return: pointer to destination string dest
  **/
 char *_strncpy(char *dest, char *src, int n)
 {
