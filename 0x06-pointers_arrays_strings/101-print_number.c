@@ -28,7 +28,21 @@ void print_number(int n)
 		q = q + 48;
 		r = r + 48;
 
-		_putchar(q);
-		_putchar(r);
+		if (q == 48)
+		{
+			if (r == 48)
+			{
+				_putchar(48);
+			}
+			else
+			{
+				putchar(r);
+			}
+		}
+		else
+		{
+			_putchar(q);
+			_putchar(r);
+		}
 	}
 }
