@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  * @argc: parameter count
- * -Wall -pedantic -Werror -Wextra -std=gnu89 0-whatsmyname.c -o mynameisargv: parameter string value
+ * @argv: array of string
  * Program that prints its name
  *
  * Return: integer
