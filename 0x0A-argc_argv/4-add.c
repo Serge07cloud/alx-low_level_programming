@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <ctype.h>
 /**
  * main - Entry point
  * @argc: argument count
@@ -25,7 +24,7 @@ int main(int argc, char **argv)
 		{
 			if (atoi(argv[i]) == 0 && *argv[i] != '0')
 			{
-				printf("Error\n");
+				printf("Error \n");
 				exit(EXIT_FAILURE);
 			}
 
