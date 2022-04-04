@@ -11,7 +11,7 @@
  */
 int main(int argc, char **argv)
 {
-	printf("%ld\n", sizeof(argv[0]) * argc / sizeof(argv[0]));
+	printf("%ld\n", sizeof(argv[0]) * argc / sizeof(argv[0]) - 1);
 
 	exit(EXIT_SUCCESS);
 }
