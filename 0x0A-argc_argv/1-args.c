@@ -11,7 +11,9 @@
  */
 int main(int argc, char **argv)
 {
-	printf("%d\n", argc);
+	unsigned int long size = (sizeof(argv) / sizeof(argv)) *  argc;
+
+	printf("%ld\n", size);
 
 	exit(EXIT_SUCCESS);
 }
