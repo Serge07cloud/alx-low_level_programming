@@ -37,7 +37,7 @@ int main(int argc, char **argv)
 
 			if (isNum == 0)
 			{
-				printf("Error \n");
+				printf("Error\n");
 				exit(EXIT_FAILURE);
 			}
 			else
