@@ -1,0 +1,1 @@
+Application on static libraries
