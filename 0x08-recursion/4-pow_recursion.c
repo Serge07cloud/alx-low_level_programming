@@ -1,5 +1,3 @@
-#include <math.h>
-
 /**
  * _pow_recursion - function name
  * @x: integer param - number to be raised
@@ -12,6 +10,7 @@ int _pow_recursion(int x, int y)
 {
 	if (y < 0)
 		return (-1);
-
-	return (pow(x, y));
+	if (y == 1)
+		return (x);
+	return (x * _pow_recursion(x, (y - 1)));
 }
