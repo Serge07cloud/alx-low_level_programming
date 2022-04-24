@@ -10,11 +10,8 @@
  */
 int _pow_recursion(int x, int y)
 {
-	int power;
-
 	if (y < 0)
 		return (-1);
 
-	power = pow(x, y);
-	return (power);
+	return (pow(x, y));
 }
