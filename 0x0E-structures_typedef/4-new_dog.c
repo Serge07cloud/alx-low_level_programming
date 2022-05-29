@@ -15,8 +15,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	char *store_name;
 	char *store_owner;
 
-	store_name = malloc(sizeof(char) * (strlen(name) + 1));
-	store_owner = malloc(sizeof(char) * (strlen(owner) + 1));
+	store_owner = malloc(sizeof(char) * (1 + strlen(owner)));
+	store_name = malloc(sizeof(char) * (1 + strlen(name)));
 	d = malloc(sizeof(dog_t));
 
 	if (d == NULL || store_name == NULL || store_owner == NULL)
@@ -25,9 +25,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	strcpy(store_name, name);
 	strcpy(store_owner, owner);
-	d->name = name;
+	d->name = store_name;
 	d->age = age;
-	d->owner = owner;
+	d->owner = store_owner;
 
 	return (d);
 }
