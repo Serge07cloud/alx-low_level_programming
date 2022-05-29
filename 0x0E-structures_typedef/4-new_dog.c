@@ -12,13 +12,19 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
+	char *store_name;
+	char *store_owner;
 
+	store_name = malloc(sizeof(char) * (strlen(name) + 1));
+	store_owner = malloc(sizeof(char) * (strlen(owner) + 1));
 	d = malloc(sizeof(dog_t));
 
-	if (d == NULL)
+	if (d == NULL || store_name == NULL || store_owner == NULL)
 	{
 		return (NULL);
 	}
+	strcpy(store_name, name);
+	strcpy(store_owner, owner);
 	d->name = name;
 	d->age = age;
 	d->owner = owner;
